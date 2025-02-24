@@ -8,14 +8,12 @@ body:
       value: |
         Thanks for taking the time to fill this feature request!
   - type: checkboxes
-    id: templates
+    id: node
     attributes:
       label: templates
       description: Which template is this issue related to?
       options:
-        - label: Generic Runtime Template
-          required: false
-        - label: Evm Template
+        - label: z3 node
           required: false
   - type: textarea
     id: feature
