@@ -19,23 +19,24 @@ chain_spec_command = "./bin/paseo-chain-spec-generator {% raw %} {{chainName}} {
 	# max_candidate_depth = 3
 	# allowed_ancestry_len = 2
 
-[[parachains]]
-id = 2000
-addToGenesis = true
-cumulus_based = true
-chain = "dev"
-force_decorator = "generic-evm"
+# [[parachains]]
+# id = 1999
+# addToGenesis = true
+# cumulus_based = true
+# chain = "z3-testnet-chainspec.json"
+# # chain = "dev"
+# force_decorator = "generic-evm"
 
-	[[parachains.collators]]
-	name = "collator01"
-	command = "./target/release/z3-node"
-	ws_port = 9933
-	rpc_port = 8833
-	args = ["--rpc-max-connections 10000"]
+# 	[[parachains.collators]]
+# 	name = "collator01"
+# 	command = "./target/release/z3-node"
+# 	ws_port = 9933
+# 	rpc_port = 8833
+# 	args = ["--rpc-max-connections 10000"]
 
-	[[parachains.collators]]
-	name = "collator02"
-	ws_port = 9822
-	rpc_port = 8822
-	command = "./target/release/z3-node"
-	args = ["--rpc-max-connections 10000"]
+# 	[[parachains.collators]]
+# 	name = "collator02"
+# 	ws_port = 9822
+# 	rpc_port = 8822
+# 	command = "./target/release/z3-node"
+# 	args = ["--rpc-max-connections 10000"]
